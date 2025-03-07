@@ -3,8 +3,8 @@ pipeline {
     environment {
         DOCKER_IMAGE = "my-jenkins-app"
         DOCKER_TAG = "latest"
-        DOCKER_REPO = "rohith1305/my-jenkins-app"
-        DOCKER_CREDENTIALS_ID = "93c470a0-e8fe-425c-8f55-932aae8919d4" // Jenkins credentials ID
+        DOCKER_REPO = "jithu145/my-jenkins-app"
+        DOCKER_CREDENTIALS_ID = "jithu14" // Jenkins credentials ID
         CONTAINER_NAME = "mycontainer11"
         CONTAINER_NAME1 = "mycontainer12"
 
@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/KyathamRohith/jenkins-docker.git'
+                git 'https://github.com/Jithendra-Jithu/jenkins-docker.git'
             }
         }
         stage('Docker Login') {
